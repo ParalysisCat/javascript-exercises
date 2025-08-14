@@ -1,4 +1,14 @@
-const repeatString = function() {
+const repeatString = function(word, multiplier) {
+
+    if (multiplier < 0) return "ERROR";
+
+    let string = "";
+
+    for (let i = 0; i < multiplier ; i++) {
+
+        string += word;
+    }
+    return string;
 
 };
 
